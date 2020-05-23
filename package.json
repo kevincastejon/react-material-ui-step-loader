@@ -9,7 +9,6 @@
     "dev": "node scripts/start.js",
     "test": "node scripts/test.js",
     "demo": "node scripts/demo.js",
-    "postinstall": "node scripts/postinstall.js",
     "generate-readme": "node scripts/generate-readme.js",
     "storybook": "start-storybook -p 6006",
     "build-component": "node scripts/build.js",
