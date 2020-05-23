@@ -68,7 +68,7 @@ export default function StepLoader(props) {
 
 StepLoader.propTypes = {
   /**
-   * An array of 'step' object with the following shape (label:string, [labelAfter:string],[labelSkip:string],[labelError:string],[color:string "primary"|"secondary"]).
+   * An array of 'step' object with the following shape (label:string, [labelAfter:string],[labelSkip:string],[labelError:string],[color:string "primary"\|"secondary"]).
    */
   steps: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
@@ -90,7 +90,7 @@ StepLoader.propTypes = {
    */
   color: PropTypes.oneOf(['primary', 'secondary']),
   /**
-   * The variant type for the LinearProgress outline. 'square' | 'rounded' | 'round'
+   * The variant type for the LinearProgress outline. 'square' \| 'rounded' \| 'round'
    */
   variant: PropTypes.oneOf(['square', 'rounded', 'round']),
 

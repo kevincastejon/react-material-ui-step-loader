@@ -1,5 +1,5 @@
 # Basic usage
-```
+```js
 <StepLoader
   steps={[
     { label: 'MyStep1', labelAfter: 'MyStep1 done' },

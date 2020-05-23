@@ -1,6 +1,8 @@
 # react-material-ui-step-loader
 
-Starter project for writing and publishing React components/library
+Stepped LinearProgress component using material-ui
+
+![preview](https://repository-images.githubusercontent.com/266265119/6464b280-9cc6-11ea-8456-060424de1fa2)
 
 -----
 
@@ -32,7 +34,7 @@ npm install react-material-ui-step-loader
 ## Usage
 
 # Basic usage
-```
+```js
 <StepLoader
   steps={[
     { label: 'MyStep1', labelAfter: 'MyStep1 done' },
@@ -91,11 +93,11 @@ Stepped LinearProgress component using material-ui
 
 | Property | Type | Required | Default value | Description |
 |-----|-----|-----|-----|:-----|
-|**steps**|*arrayOf*|yes||An array of 'step' object with the following shape (label:string, [labelAfter:string],[labelSkip:string],[labelError:string],[color:string "primary"|"secondary"]).|
+|**steps**|*arrayOf*|yes||An array of 'step' object with the following shape (label:string, [labelAfter:string],[labelSkip:string],[labelError:string],[color:string "primary"\|"secondary"]).|
 |**currentStep**|*number*|yes||The current step.|
 |**height**|*number*|no|2|The LinearProgress height.|
 |**color**|*enum*|no|<See the source code>|The color of the progress bars.|
-|**variant**|*enum*|no||The variant type for the LinearProgress outline. 'square' | 'rounded' | 'round'|
+|**variant**|*enum*|no||The variant type for the LinearProgress outline. 'square' \| 'rounded' \| 'round'|
 |**currentProgress**|*number*|no|-1|The current progress [0-100] of the current step. If ommited the LinearProgress will use the 'undeterminate' variant.|
 |**errors**|*arrayOf*|no|<See the source code>|An array of int representing the failed steps.|
 |**skips**|*arrayOf*|no|<See the source code>|An array of int representing the skipped steps.|
