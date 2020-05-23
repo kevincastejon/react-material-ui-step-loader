@@ -53,7 +53,7 @@ const App = () => {
         <ul>
           <li><a href="storybook">  <img alt="storybook" style={{height:25, verticalAlign:'middle'}} src={storybookIcon} /> Storybook playground</a></li>
           <li><a href="documentation">  <img alt="documentation" style={{height:25, verticalAlign:'middle'}} src={docIcon} /> Documentation</a></li>
-          <li><a href="https://github.com/kevincastejon/react-skills"><img alt="github" style={{height:25, verticalAlign:'middle'}} src={githubIcon} /> Github</a></li>
+          <li><a href="https://github.com/kevincastejon/react-material-ui-step-loader"><img alt="github" style={{height:25, verticalAlign:'middle'}} src={githubIcon} /> Github</a></li>
         </ul>
       <hr/>
       <Card style={{ backgroundColor: '#fafdff', width: '80%', margin: 'auto', marginBottom:20,  marginTop: 20 }}>
