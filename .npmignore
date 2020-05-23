@@ -26,8 +26,6 @@ CHANGELOG.md
 README.md
 UPGRADE.md
 .storybook
-.eslintignore
-.gitattributes
 template.handlebars
 stories/0-StepLoader.stories.js
 dev_readme.md
