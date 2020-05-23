@@ -20,14 +20,8 @@ public
 src
 scripts
 config
-architect
 demo
 CHANGELOG.md
 README.md
 UPGRADE.md
 .storybook
-template.handlebars
-stories/0-StepLoader.stories.js
-dev_readme.md
-usage_readme.md
-setup_readme.md
