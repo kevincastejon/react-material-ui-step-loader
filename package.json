@@ -1,7 +1,7 @@
 {
   "name": "react-material-ui-step-loader",
   "description": "Stepped LinearProgress component using material-ui",
-  "version": "1.31.0",
+  "version": "1.32.0",
   "main": "build/index.js",
   "homepage": "https://kevincastejon.github.io/react-material-ui-step-loader/",
   "scripts": {
