@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/react-material-ui-step-loader/static/css/main.f3c51f8e.chunk.css",
-    "main.js": "/react-material-ui-step-loader/static/js/main.ce06335a.chunk.js",
-    "main.js.map": "/react-material-ui-step-loader/static/js/main.ce06335a.chunk.js.map",
+    "main.js": "/react-material-ui-step-loader/static/js/main.84238875.chunk.js",
+    "main.js.map": "/react-material-ui-step-loader/static/js/main.84238875.chunk.js.map",
     "runtime-main.js": "/react-material-ui-step-loader/static/js/runtime-main.ed46beca.js",
     "runtime-main.js.map": "/react-material-ui-step-loader/static/js/runtime-main.ed46beca.js.map",
-    "static/js/2.24edba2c.chunk.js": "/react-material-ui-step-loader/static/js/2.24edba2c.chunk.js",
-    "static/js/2.24edba2c.chunk.js.map": "/react-material-ui-step-loader/static/js/2.24edba2c.chunk.js.map",
+    "static/js/2.6afb3ba4.chunk.js": "/react-material-ui-step-loader/static/js/2.6afb3ba4.chunk.js",
+    "static/js/2.6afb3ba4.chunk.js.map": "/react-material-ui-step-loader/static/js/2.6afb3ba4.chunk.js.map",
     "index.html": "/react-material-ui-step-loader/index.html",
-    "precache-manifest.86a2a88aa17dd2d00291d9dfb2ee439f.js": "/react-material-ui-step-loader/precache-manifest.86a2a88aa17dd2d00291d9dfb2ee439f.js",
+    "precache-manifest.9630b090bdb7abbedf2d05765350989d.js": "/react-material-ui-step-loader/precache-manifest.9630b090bdb7abbedf2d05765350989d.js",
     "service-worker.js": "/react-material-ui-step-loader/service-worker.js",
     "static/css/main.f3c51f8e.chunk.css.map": "/react-material-ui-step-loader/static/css/main.f3c51f8e.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.ed46beca.js",
-    "static/js/2.24edba2c.chunk.js",
+    "static/js/2.6afb3ba4.chunk.js",
     "static/css/main.f3c51f8e.chunk.css",
-    "static/js/main.ce06335a.chunk.js"
+    "static/js/main.84238875.chunk.js"
   ]
 }
