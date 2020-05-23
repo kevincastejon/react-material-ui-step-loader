@@ -38,7 +38,7 @@ export default function StepLoader(props) {
                 variant="subtitle2"
                 style={{
                   fontWeight: currentStep >= i ? 'bold' : 'normal',
-                  color: errors.includes(i) ? 'red' : null,
+                  color: errors.includes(i) ? 'red' : (skips.includes(i)?'orange':null),
                   fontStyle: currentStep > i ? 'oblique' : 'normal',
                 }}
               >

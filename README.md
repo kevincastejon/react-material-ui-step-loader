@@ -2,7 +2,7 @@
 
 Stepped LinearProgress component using material-ui
 
-![preview](https://repository-images.githubusercontent.com/266265119/6464b280-9cc6-11ea-8456-060424de1fa2)
+![preview](https://repository-images.githubusercontent.com/266265119/acafbf00-9d1e-11ea-9822-9d17c06713a0)
 
 -----
 
