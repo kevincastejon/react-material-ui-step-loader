@@ -22,9 +22,10 @@
     "create-readme": "yarn create-react-readme ./package.json ./src/lib/components/ ./readme.md -t ./template.handlebars -u ./usage_readme.md -d ./dev_readme.md",
     "build-storybook": "build-storybook -c .storybook -o ./build/storybook",
     "postbuild": "fcli move ./build/ ./demo/ && fcli move ./demo/ ./build/demo && yarn build-storybook && fcli copy ./readme.md ./build/index.md && fcli copy ./_config.yml ./build/_config.yml",
-    "deploy-github-page": "gh-pages -d build",
-    "build-and-deploy": "yarn build && yarn deploy-github-page",
-    "publish-build-and-deploy": "yarn publish && yarn build-and-deploy"
+    "pregh:deploy": "yarn build",
+    "gh:deploy": "gh-pages -d build",
+    "publish": "yarn publish",
+    "post:publish":"yarn gh:deploy",
   },
   "eslintConfig": {
     "extends": [
