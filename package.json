@@ -24,7 +24,7 @@
     "postbuild": "fcli move ./build/ ./demo/ && fcli move ./demo/ ./build/demo && yarn build-storybook && fcli copy ./readme.md ./build/index.md && fcli copy ./_config.yml ./build/_config.yml",
     "pregh:deploy": "yarn build",
     "gh:deploy": "gh-pages -d build",
-    "publish": "yarn publish",
+    "publish:package": "yarn publish",
     "post:publish":"yarn gh:deploy",
   },
   "eslintConfig": {
