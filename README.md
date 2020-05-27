@@ -1,31 +1,33 @@
 # react-material-ui-step-loader
 
-Stepped LinearProgress component using material-ui
+![npm_version](https://img.shields.io/npm/v/react-material-ui-step-loader)
+![license](https://img.shields.io/npm/l/react-material-ui-step-loader)
 
-![preview](https://repository-images.githubusercontent.com/266265119/acafbf00-9d1e-11ea-9822-9d17c06713a0)
+Stepped Progress react component using material-ui
+
+<!-- ![react-material-ui-step-loader preview](https://my-social-preview-image-url) -->
 
 -----
 
-- **[Links](#links)**
+- **[Overview](#overview)**
 - **[Installation](#install)**
 - **[Usage](#usage)**
-- **[Developers](#dev)**
 - **[Props API](#propsapi)**
+- **[Developers](#dev)**
 
 -----
 
-<a name="links"></a>
-## Links
+<a name="overview"></a>
+## Overview
 
-- [Documentation](https://kevincastejon.github.io/react-material-ui-step-loader/documentation)
-- [Quick demo](https://kevincastejon.github.io/react-material-ui-step-loader/)
+- [Documentation](https://kevincastejon.github.io/react-material-ui-step-loader/)
+- [Quick demo](https://kevincastejon.github.io/react-material-ui-step-loader/demo)
 - [Storybook playground](https://kevincastejon.github.io/react-material-ui-step-loader/storybook)
 - [NPM](https://www.npmjs.com/package/react-material-ui-step-loader)
-- [Github](https://github.com/kevincastejon/react-material-ui-step-loader)
+- [Github](https://github.com/kevincastejon/react-material-ui-step-loader.git)
 
 <a name="install"></a>
 ## Installation
-
 ```bash
 npm install react-material-ui-step-loader
 ```
@@ -33,51 +35,26 @@ npm install react-material-ui-step-loader
 <a name="usage"></a>
 ## Usage
 
-# Basic usage
-```js
+```javascript
+
+import { StepLoader } from 'react-material-ui-step-loader';
+const steps = [
+  { label: 'Authenticating', labelAfter: 'Authenticated' },
+  { label: 'Checking updates', labelAfter: 'Updated', labelError: 'No update found' },
+  { label: 'Formatting message', labelAfter: 'Message formatted', labelSkip: 'Already formatted' },
+  { label: 'Posting message', labelAfter: 'Message posted' },
+  { label: 'Verifying', labelAfter: 'Verified' },
+];
+// ...
+
 <StepLoader
-  steps={[
-    { label: 'MyStep1', labelAfter: 'MyStep1 done' },
-    { label: 'MyStep2', labelAfter: 'MyStep2 done' },
-    { label: 'MyStep3', labelAfter: 'MyStep3 done' },
-  ]}
-  currentStep={1}
+  steps={steps}
+  currentStep={2}
   currentProgress={75}
 />
 ```
 
 
-<a name="dev"></a>
-## Developers
-
-**All the scripts presented here can be call with npm or yarn, if using yarn just replace 'npm run' by 'yarn'.**
-
-### Start
-`npm run start`
-(alias of 'npm run dev')
-
-Runs the library in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Test
-`npm run test`
-
-Runs the test watcher in an interactive mode.
-
-`npm run storybook`
-
-Runs the storybook playground in development mode. Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
-
-### Builds
-`npm run `
-  - **build-component** : Build the component for publishing into 'build' folder.
-  - **build-documentation-page** : Build a Jekyll static page from the readme.md file into 'public/documentation'. To test this, run 'start' or 'dev' and open your browser to [http://localhost:3000/documentation](http://localhost:3000/documentation).
-  - **build-storybook-page** : Build the storybook static app into 'public/storybook'. To test this, run 'start' or 'dev' and open your browser to [http://localhost:3000/storybook](http://localhost:3000/storybook).
-  - **build-github-page** : Will call 'build-documentation-page' and 'build-storybook-page' and then build the complete static demo app into 'demo' folder for github gh-page branch.
-  - **build-all** : Will call 'build-component' and 'build-github-page' so it will build the component into 'build' for publishing, and the complete static demo app into 'demo' folder for github gh-page branch.
-
-### Deploy
-`npm run deploy-github-page`
-Deploys the built demo page to github gh-page branch. You can then access by visiting [https://YOUR-USER-NAME.github.io/YOUR-PACKAGE-NAME/](https://YOUR-USER-NAME.github.io/YOUR-PACKAGE-NAME/), add '/documentation' to visit the Jekyll static readme app, or '/storybook' to visit the storybook playground of your library.
 
 
 <a name="propsapi"></a>
@@ -97,11 +74,61 @@ Stepped LinearProgress component using material-ui
 |**currentStep**|*number*|yes||The current step.|
 |**height**|*number*|no|2|The LinearProgress height.|
 |**color**|*enum*|no|<See the source code>|The color of the progress bars.|
-|**variant**|*enum*|no||The variant type for the LinearProgress outline. 'square' \| 'rounded' \| 'round'|
+|**variant**|*enum*|no|<See the source code>|The variant type for the LinearProgress outline. 'square' \| 'rounded' \| 'round'|
 |**currentProgress**|*number*|no|-1|The current progress [0-100] of the current step. If ommited the LinearProgress will use the 'undeterminate' variant.|
 |**errors**|*arrayOf*|no|<See the source code>|An array of int representing the failed steps.|
 |**skips**|*arrayOf*|no|<See the source code>|An array of int representing the skipped steps.|
 
 -----
 
-<sub>This document was generated by the <a href="https://github.com/kevincastejon/create-react-readme" target="_blank">**Create React Readme v1.0.6**</a>.</sub>
+
+<a name="dev"></a>
+## Developers
+
+### Development
+You should use YARN for development as NPM seems to be causing some issues!
+(Using NPM for just installing and using as a component is OK)
+#### Demo app
+- `yarn start` for live-testing the demo app
+
+#### Storybook
+- `yarn storybook` for live-testing the storybook app
+
+#### GitHub Page
+- `yarn github-page` for testing a temporary build of the full github-page without an possible theme that you will choose later on GitHub (no live-testing)
+
+### Prod
+#### Generate Readme.md
+- `yarn generate-readme`
+
+Will generate a readme according to your package.json info and the following files :
+-  - setup_readme.md (if not present, it will use the default `npm i YOUR_PACKAGE_NAME`)
+-  - usage_readme.md
+-  - dev_readme.md
+
+You can then edit your readme.md file if you need to before building/publishing/deploying
+
+#### NPM
+- `yarn publish`
+
+Will transpile and publish to npm, it will prompt you the version incrementing.
+
+#### GitHub Page
+- `yarn build`
+
+Will build the static demo and storybook apps for prod into the build folder
+
+- `yarn deploy-github-page`
+
+Will deploy the built apps from 'build' folder to the 'gh-pages' github branch
+
+#### Helper scripts
+- `yarn build-and-deploy` This helper script will call all the scripts for a complete GitHub building and deploying (`yarn build && yarn deploy-github-page`)
+- `yarn publish-build-and-deploy` This helper script will call all the scripts for a complete NPM and GitHub transpiling/building and publishing/deploying (`yarn publish && yarn build-and-deploy`)
+
+
+You should then commit and push sources on GitHub the usual way.
+
+
+
+<sub>This document was generated by the <a href="https://github.com/kevincastejon/create-react-readme" target="_blank">**Create React Readme v1.0.7**</a>.</sub>

@@ -10,9 +10,7 @@
 
 # production
 /build
-/demo
-/public/documentation
-/public/storybook
+/dist
 
 # misc
 .DS_Store
@@ -24,12 +22,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-yarn.lock
-
-_site
-.sass-cache
-Gemfile.lock
-*.gem
-.jekyll-cache
-architect/public/**
-architect/index.md

@@ -13,7 +13,7 @@ import ErrorIcon from '@material-ui/icons/Error';
  */
 export default function StepLoader(props) {
   const {
-    steps, color, height, variant, currentStep, currentProgress, errors, skips
+    steps, color, height, variant, currentStep, currentProgress, errors, skips,
   } = props;
   return (
     <div>
@@ -38,26 +38,29 @@ export default function StepLoader(props) {
                 variant="subtitle2"
                 style={{
                   fontWeight: currentStep >= i ? 'bold' : 'normal',
-                  color: errors.includes(i) ? 'red' : (skips.includes(i)?'orange':null),
+                  color: errors.includes(i) ? 'red' : (skips.includes(i) ? 'orange' : null),
                   fontStyle: currentStep > i ? 'oblique' : 'normal',
                 }}
               >
-                {errors.includes(i) && s.labelError ? s.labelError : (skips.includes(i) && s.labelSkip ? s.labelSkip : (currentStep > i && s.labelAfter ? s.labelAfter : s.label))}
+                {errors.includes(i) && s.labelError ? s.labelError
+                  : (skips.includes(i) && s.labelSkip ? s.labelSkip
+                    : (currentStep > i && s.labelAfter ? s.labelAfter : s.label))}
               </Typography>
             </Grid>
             <Grid xs item>
               <LinearProgress
-                style={{height:height, borderRadius:variant==='square'?0:(variant==='rounded'?5:15)}}
+                style={{ height, borderRadius: variant === 'square' ? 0 : (variant === 'rounded' ? 5 : 15) }}
                 variant={(currentStep === i && currentProgress === -1 ? 'indeterminate' : 'determinate')}
-                value={currentStep > i ? 100 : (currentStep === i && currentProgress > -1 ? currentProgress : 0)}
+                value={currentStep > i ? 100
+                  : (currentStep === i && currentProgress > -1 ? currentProgress : 0)}
                 color={s.color ? s.color : color}
               />
             </Grid>
             <Grid item>
-              {errors.includes(i) ? <ErrorIcon color="secondary" /> :
-               (skips.includes(i)?<CancelIcon style={{color:'orange'}}/>:
-                (currentStep > i ? <CheckCircleIcon style={{ color: 'green' }} /> :
-                 <CheckCircleOutlineIcon style={{ color: currentStep === i ? 'black' : 'grey' }} />))}
+              {errors.includes(i) ? <ErrorIcon color="secondary" />
+                : (skips.includes(i) ? <CancelIcon style={{ color: 'orange' }} />
+                  : (currentStep > i ? <CheckCircleIcon style={{ color: 'green' }} />
+                    : <CheckCircleOutlineIcon style={{ color: currentStep === i ? 'black' : 'grey' }} />))}
             </Grid>
           </Grid>
         ))}
@@ -111,6 +114,7 @@ StepLoader.propTypes = {
 };
 StepLoader.defaultProps = {
   color: 'primary',
+  variant: 'square',
   height: 2,
   currentProgress: -1,
   errors: [],

@@ -1,12 +1,18 @@
-# Basic usage
-```js
+```javascript
+
+import { StepLoader } from 'react-material-ui-step-loader';
+const steps = [
+  { label: 'Authenticating', labelAfter: 'Authenticated' },
+  { label: 'Checking updates', labelAfter: 'Updated', labelError: 'No update found' },
+  { label: 'Formatting message', labelAfter: 'Message formatted', labelSkip: 'Already formatted' },
+  { label: 'Posting message', labelAfter: 'Message posted' },
+  { label: 'Verifying', labelAfter: 'Verified' },
+];
+// ...
+
 <StepLoader
-  steps={[
-    { label: 'MyStep1', labelAfter: 'MyStep1 done' },
-    { label: 'MyStep2', labelAfter: 'MyStep2 done' },
-    { label: 'MyStep3', labelAfter: 'MyStep3 done' },
-  ]}
-  currentStep={1}
+  steps={steps}
+  currentStep={2}
   currentProgress={75}
 />
 ```
