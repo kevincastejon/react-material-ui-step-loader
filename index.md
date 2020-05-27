@@ -5,7 +5,7 @@
 
 Stepped Progress react component using material-ui
 
-<!-- ![react-material-ui-step-loader preview](https://my-social-preview-image-url) -->
+![react-material-ui-step-loader preview](https://repository-images.githubusercontent.com/266265119/acafbf00-9d1e-11ea-9822-9d17c06713a0)
 
 -----
 
